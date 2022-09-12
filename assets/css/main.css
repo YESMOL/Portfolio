@@ -140,6 +140,7 @@
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 0.5em 0;
+		
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -3883,3 +3884,28 @@
 
 
 	}
+	.typewriter h3{
+		overflow: hidden;
+		border-right: .15em solid white; 
+		white-space: nowrap; 
+		margin: 0 auto;
+		letter-spacing: .15em; 
+		animation: 
+		  typing 3.5s steps(40, end),
+		  blink-caret .75s step-end infinite;
+	  }
+	  
+	  @keyframes typing {
+		from { width: 0 }
+		to { width: 100% }
+	  }
+
+	  @keyframes blink-caret {
+		from, to { border-color: transparent }
+		50% { border-color: white; }
+	  }
+
+	  .typewriterHead{
+		display: flex;
+  		justify-content: center;
+	  }
